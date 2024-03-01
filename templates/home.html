@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <heade backgrond-color: black;>
+    <title>Learninglanguage</title>
+    <style>
+      h1{
+        font-size: 60px;
+        font-family: Roboto;
+        font-weight: normal;
+        color: rgb{100,100,100}
+        text-align: center;
+      }
+      #banner {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+      #container{
+      max-width: 720px;
+      margin: 0 auto 0 auto;
+      }
+      h2{
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: normal;
+        color: rgb{100,100,100}
+      }
+    </style>
+  </heade>
+  <body>
+    <div id="container">
+    <h1>Learninglanguage</h1>
+    <img id="banner" src="https://98d40651-5efc-459b-97dd-970fa0b5adeb-00-gt399uguyw13.spock.replit.dev/static/banner.jpg">
+    <h2>About</h2>
+    <p>Making learning language easy and fun</p>
+      <h2>Languages Offered</h2>
+      <div>
+        {% for language in languages %}
+        <div>
+          <h3>{{language['title']}}</h3></div>
+        {% endfor %}
+      </div>
+      
+      <div>
+        <form>
+          <table>
+            <tr>
+              <td><input type="button" value="Sign up"></td>
+              <td>OR</td>
+              <td><input type="button" value="Sign in"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      
+      </div>
+  </body>
+</html>
